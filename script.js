@@ -63,3 +63,37 @@ console.log(ary);
 //=============
 console.log(ary.join("|"))
 console.log(ary)
+//=============
+//第七種:reduce
+//=============
+// 關鍵字（一句話說明）：將陣列做累加輸出成字串
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 2 Callback 函式 和 初始值
+// 回傳值: 字串
+//=============
+console.log(ary.reduce(function(prev,next){
+    return prev + "跟" + next
+})
+)
+
+let arynum = [1,2,3,4,5,6,7,8,9,10]
+
+console.log(arynum.reduce(function(prev,next){
+    return prev + next
+},0)
+
+)//陣列數字的話，會列印出數字加總
+
+//=============
+//第八種:reduceRight
+//=============
+// 關鍵字（一句話說明）：將陣列做累加輸出成字串(右到左)
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 2 Callback 函式 和 初始值
+// 回傳值: 字串
+//=============
+
+console.log(ary.reduceRight(function(prev,next){
+    return prev + "跟" + next
+})
+)
