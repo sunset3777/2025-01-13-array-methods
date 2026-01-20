@@ -154,3 +154,36 @@ console.log(repeatary.lastIndexOf("中文書"))
 //=============
 
 console.log(ary.length)
+
+//第十四種: some
+//=============
+// 關鍵字（一句話說明）：檢查陣列有其中一個元素
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 無
+// 回傳值: boolean
+//=============
+
+console.log(ary.some(function(val){
+    return val == "日文書"
+})
+)
+
+//第十五種: every
+//=============
+// 關鍵字（一句話說明）：檢查陣列是否都是同一元素
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 無
+// 回傳值: boolean
+//=============
+
+let sameary = ["中文書","中文書","中文書","中文書"]
+
+console.log(ary.every(function(val){
+    return val == "日文書"
+})
+)
+
+console.log(sameary.every(function(val){
+    return val == "中文書"
+})
+)
