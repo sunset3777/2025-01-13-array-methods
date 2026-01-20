@@ -53,3 +53,13 @@ console.log(ary);
 //splice 新增元素用法
 console.log(ary.splice(1, 0, "英文書"))
 console.log(ary);
+//=============
+//第六種:join
+//=============
+// 關鍵字（一句話說明）：將陣列轉成字串
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 1 指定要用甚麼符號連結字串(toString預設為逗號)
+// 回傳值: 字串
+//=============
+console.log(ary.join("|"))
+console.log(ary)
