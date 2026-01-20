@@ -144,3 +144,13 @@ console.log(ary)
 
 repeatary = ["中文書","英文書","日文書","英文書","日文書","中文書","英文書",]
 console.log(repeatary.lastIndexOf("中文書"))
+
+//第十三種: length
+//=============
+// 關鍵字（一句話說明）：列出陣列長度
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 無
+// 回傳值: 陣列長度
+//=============
+
+console.log(ary.length)
