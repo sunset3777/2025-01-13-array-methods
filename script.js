@@ -99,18 +99,6 @@ console.log(ary.reduceRight(function(prev,next){
 )
 
 //=============
-<<<<<<< HEAD
-//第九種:reverse
-//=============
-// 關鍵字（一句話說明）：將陣列順序倒反
-// 是否改變原陣列（mutate）：是
-// 參數說明 : 無
-// 回傳值: 陣列
-//=============
-console.log(ary.revwese())
-console.log(ary)
-
-=======
 //第九種: sort
 //=============
 // 關鍵字（一句話說明）：將陣列做排序
@@ -126,4 +114,13 @@ console.log(randonum.sort(function(a, b){
     return a > b ? 1 : -1
 })
 )//如果是以數字為陣列 加上callback 函式可以從小到大排列
->>>>>>> dev
+
+//第十種:reverse
+//=============
+// 關鍵字（一句話說明）：將陣列順序倒反
+// 是否改變原陣列（mutate）：是
+// 參數說明 : 無
+// 回傳值: 陣列
+//=============
+console.log(ary.revwese())
+console.log(ary)
