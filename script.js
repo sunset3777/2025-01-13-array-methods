@@ -122,9 +122,8 @@ console.log(randonum.sort(function(a, b){
 // 參數說明 : 無
 // 回傳值: 陣列
 //=============
-console.log(ary.reverse())
-console.log(ary)
-
+revary = ["中文書","英文書","日文書"]
+console.log(revary.reverse())
 //第十一種:indexOf
 //=============
 // 關鍵字（一句話說明）：檢查陣列中是否有某個元素，並列印到該元素為止的陣列長度
@@ -133,3 +132,15 @@ console.log(ary)
 // 回傳值: 陣列長度
 //=============
 console.log(ary.indexOf("英文書"))
+console.log(ary)
+
+//第十二種: lastIndexOf
+//=============
+// 關鍵字（一句話說明）：檢查陣列中最後出現的某元素
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 1 或以上
+// 回傳值: 陣列長度
+//=============
+
+repeatary = ["中文書","英文書","日文書","英文書","日文書","中文書","英文書",]
+console.log(repeatary.lastIndexOf("中文書"))
