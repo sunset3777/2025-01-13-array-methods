@@ -114,7 +114,7 @@ console.log(ary.reduceRight(function(prev,next){
 //第九種: sort
 //=============
 // 關鍵字（一句話說明）：將陣列做排序
-// 是否改變原陣列（mutate）：否
+// 是否改變原陣列（mutate）：是
 // 參數說明 : 0 或新增一個 callback 函式
 // 回傳值: 陣列
 //=============
@@ -144,7 +144,7 @@ console.log(revary.reverse())
 // 關鍵字（一句話說明）：檢查陣列中是否有某個元素，並列印到該元素為止的陣列長度
 // 是否改變原陣列（mutate）：否
 // 參數說明 : 1 或以上
-// 回傳值: 陣列長度
+// 回傳值: 索引值
 //=============
 console.log(ary.indexOf("英文書"))
 console.log(ary)
@@ -154,7 +154,7 @@ console.log(ary)
 // 關鍵字（一句話說明）：檢查陣列中最後出現的某元素
 // 是否改變原陣列（mutate）：否
 // 參數說明 : 1 或以上
-// 回傳值: 陣列長度
+// 回傳值: 索引值
 //=============
 
 repeatary = ["中文書","英文書","日文書","英文書","日文書","中文書","英文書",]
@@ -215,3 +215,57 @@ ary.forEach(function(val, i){
     return console.log (i, val)
 })
 console.log(ary);
+
+//第十七種: map
+//=============
+// 關鍵字（一句話說明）：可以再不改變原陣列的情況回傳一個新陣列
+// 是否改變原陣列（mutate）：否
+// 參數說明 : callback函式
+// 回傳值: 陣列
+//=============
+
+let book = ["中文書","英文書","日文書"]
+let prices = [100, 200, 300];
+
+let bookprices=ary.map((val, i) => {
+    return val + "=" + prices[i] + "元";
+});
+
+console.log(bookprices)
+
+//第十八種: filter
+//=============
+// 關鍵字（一句話說明）：挑出陣列內的幾個元素變成另外一個陣列
+// 是否改變原陣列（mutate）：否
+// 參數說明 : callback函式
+// 回傳值: 陣列
+//=============
+
+let result = book.map((val, i) => {
+    if (prices[i] < 250) {
+        return val + "=" + prices[i] + "元";
+    }
+    return null;
+}).filter(item => item !== null);
+
+console.log(result);
+
+//第十九種: slice
+//=============
+// 關鍵字（一句話說明）：挑出陣列內的幾個元素變成另外一個陣列
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 2 ,開始索引數，結束索引數
+// 回傳值: 陣列
+//=============
+
+console.log(repeatary.slice(3,6))
+
+//第二十種: concat
+//=============
+// 關鍵字（一句話說明）：在原有陣列後面加上一段陣列變成新的陣列
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 1個或以上要新增的陣列
+// 回傳值: 合併後的新陣列
+//=============
+
+console.log(ary.concat(["法文書","德文書"]))
