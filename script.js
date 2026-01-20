@@ -30,3 +30,13 @@ console.log(ary);
 //=============
 console.log(ary.pop());
 console.log(ary);
+//=============
+//第四種:push
+//=============
+// 關鍵字（一句話說明）：新增陣列最後一個值
+// 是否改變原陣列（mutate）：是
+// 參數說明 : 1或以上 陣列長度
+// 回傳值: 陣列長度
+//=============
+console.log(ary.push("日文書"));
+console.log(ary);
