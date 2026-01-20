@@ -122,5 +122,14 @@ console.log(randonum.sort(function(a, b){
 // 參數說明 : 無
 // 回傳值: 陣列
 //=============
-console.log(ary.revwese())
+console.log(ary.reverse())
 console.log(ary)
+
+//第十一種:indexOf
+//=============
+// 關鍵字（一句話說明）：檢查陣列中是否有某個元素，並列印到該元素為止的陣列長度
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 1 或以上
+// 回傳值: 陣列長度
+//=============
+console.log(ary.indexOf("英文書"))
