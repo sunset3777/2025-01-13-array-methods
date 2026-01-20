@@ -8,8 +8,10 @@ let ary = ["中文書","英文書","日文書"]
 // 參數說明 : 0 不需要傳入參數
 // 回傳值：被取出的元素
 //=============
+
 console.log(ary.shift());
 console.log(ary);
+
 //=============
 //第二種:unshift
 //=============
@@ -18,8 +20,10 @@ console.log(ary);
 // 參數說明 : 1或以上
 // 回傳值：陣列長度
 //=============
+
 console.log(ary.unshift("中文書"));
 console.log(ary);
+
 //=============
 //第三種:pop
 //=============
@@ -28,8 +32,10 @@ console.log(ary);
 // 參數說明 : 0 不需要傳入參數
 // 回傳值：被取出的元素
 //=============
+
 console.log(ary.pop());
 console.log(ary);
+
 //=============
 //第四種:push
 //=============
@@ -38,8 +44,10 @@ console.log(ary);
 // 參數說明 : 1或以上 陣列長度
 // 回傳值: 陣列長度
 //=============
+
 console.log(ary.push("日文書"));
 console.log(ary);
+
 //=============
 //第五種:splice
 //=============
@@ -53,6 +61,7 @@ console.log(ary);
 //splice 新增元素用法
 console.log(ary.splice(1, 0, "英文書"))
 console.log(ary);
+
 //=============
 //第六種:join
 //=============
@@ -61,8 +70,10 @@ console.log(ary);
 // 參數說明 : 1 指定要用甚麼符號連結字串(toString預設為逗號)
 // 回傳值: 字串
 //=============
+
 console.log(ary.join("|"))
 console.log(ary)
+
 //=============
 //第七種:reduce
 //=============
@@ -71,6 +82,7 @@ console.log(ary)
 // 參數說明 : 2 Callback 函式 和 初始值
 // 回傳值: 字串
 //=============
+
 console.log(ary.reduce(function(prev,next){
     return prev + "跟" + next
 })
@@ -106,6 +118,7 @@ console.log(ary.reduceRight(function(prev,next){
 // 參數說明 : 0 或新增一個 callback 函式
 // 回傳值: 陣列
 //=============
+
 console.log(ary.sort())
 
 let randonum = [1,7,3,4,16,8]
@@ -122,8 +135,10 @@ console.log(randonum.sort(function(a, b){
 // 參數說明 : 無
 // 回傳值: 陣列
 //=============
+
 revary = ["中文書","英文書","日文書"]
 console.log(revary.reverse())
+
 //第十一種:indexOf
 //=============
 // 關鍵字（一句話說明）：檢查陣列中是否有某個元素，並列印到該元素為止的陣列長度
@@ -187,3 +202,16 @@ console.log(sameary.every(function(val){
     return val == "中文書"
 })
 )
+
+//第十六種: forEach
+//=============
+// 關鍵字（一句話說明）：把陣列每個元素都傳出一次
+// 是否改變原陣列（mutate）：否
+// 參數說明 : 3 當下的值，索引數，陣列
+// 回傳值: boolean
+//=============
+
+ary.forEach(function(val, i){
+    return console.log (i, val)
+})
+console.log(ary);
