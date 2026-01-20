@@ -89,7 +89,7 @@ console.log(arynum.reduce(function(prev,next){
 //=============
 // 關鍵字（一句話說明）：將陣列做累加輸出成字串(右到左)
 // 是否改變原陣列（mutate）：否
-// 參數說明 : 2 Callback 函式 和 初始值
+// 參數說明 : 1 Callback 函式
 // 回傳值: 字串
 //=============
 
@@ -97,3 +97,15 @@ console.log(ary.reduceRight(function(prev,next){
     return prev + "跟" + next
 })
 )
+
+//=============
+//第九種:reverse
+//=============
+// 關鍵字（一句話說明）：將陣列順序倒反
+// 是否改變原陣列（mutate）：是
+// 參數說明 : 無
+// 回傳值: 陣列
+//=============
+console.log(ary.revwese())
+console.log(ary)
+
